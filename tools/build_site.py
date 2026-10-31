@@ -517,6 +517,28 @@ def render_recipe(r: dict, prev: dict | None, nxt: dict | None) -> str:
 # --------------------------------------------------------------------- main
 
 
+def render_404(recipes: list[dict]) -> str:
+    links = "".join(
+        f'<li><a href="r/{r["slug"]}.html">{esc(r["title"])}</a></li>' for r in recipes[:7]
+    )
+    body = f"""<header class="hero">
+  <p class="kicker">404</p>
+  <h1 class="hero-title">ページが見つかりません</h1>
+  <p class="hero-lede">お探しのレシピは移動したか、まだ書かれていないようです。</p>
+</header>
+<main>
+  <ul class="cards"><li class="card" style="border-top-color:var(--accent)">
+    <div class="card-link">
+      <h2 class="card-title">レシピ一覧</h2>
+      <ul class="mini">{links}</ul>
+      <p><a class="back" href="index.html">← トップへ戻る</a></p>
+    </div>
+  </li></ul>
+</main>
+"""
+    return page("ページが見つかりません｜うちのレシピ", "404", body, root="")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--serve", action="store_true")
@@ -556,6 +578,7 @@ def main() -> int:
         old.unlink()
     (DOCS / ".nojekyll").write_text("", encoding="utf-8")
     (DOCS / "index.html").write_text(render_index(recipes), encoding="utf-8")
+    (DOCS / "404.html").write_text(render_404(recipes), encoding="utf-8")
 
     for i, r in enumerate(recipes):
         prev = recipes[i - 1] if i > 0 else None
