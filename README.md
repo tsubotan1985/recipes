@@ -8,7 +8,7 @@
 
 - [さわやか風「げんこつハンバーグ」（黄金比ブレンド・卵不使用・オーブン併用）](genkotsu-hamburg.md)
 - [甘辛コクの 回鍋肉（日本式）](hoikoro-japanese-style.md)
-- [旭川らあめん「火山らぁめん」再現レシピ](kazan-ramen.md)
+- [マルちゃん「北の味わい ガラ炊き味噌ラーメン」で作る 火山らあめん風](kazan-ramen.md)
 - [ミラノ風リゾット（Risotto alla Milanese）](risotto-alla-milanese.md)
 - [帯広×菱田屋インスパイア「焦がしニンニク生姜焼き」 (豚バラver.)](shogayaki.md)
 - [茨城ご当地「スタミナラーメン」再現レシピ](stamina-ramen.md)
