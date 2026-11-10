@@ -12,6 +12,7 @@
 - [ミラノ風リゾット（Risotto alla Milanese）](risotto-alla-milanese.md)
 - [帯広×菱田屋インスパイア「焦がしニンニク生姜焼き」 (豚バラver.)](shogayaki.md)
 - [茨城ご当地「スタミナラーメン」再現レシピ](stamina-ramen.md)
+- [焼き色と蒸しでつくる コク深い豚汁](tonjiru-kojima.md)
 - [圧倒的香ばしさの 鶏肉とカシューナッツ炒め（腰果鶏丁）](toriniku-cashew-itame.md)
 
 ## 使い方
